@@ -16,6 +16,8 @@
         <jakarta.servlit-api.version>6.0.0</jakarta.servlit-api.version>
         <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <jakarta.servlet.jsp.jstl-api>3.0.0</jakarta.servlet.jsp.jstl-api>
+        <jakarta.servlet.jsp.jstl>3.0.1</jakarta.servlet.jsp.jstl>
     </properties>
 
     <dependencies>
@@ -32,13 +34,25 @@
             <version>${postgresql.version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
             <version>${jakarta.servlit-api.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>${jakarta.servlet.jsp.jstl-api}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>${jakarta.servlet.jsp.jstl}</version>
+        </dependency>
+
 
     </dependencies>
 
