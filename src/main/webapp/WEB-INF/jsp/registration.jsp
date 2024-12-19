@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("${pageContext.request.contextPath}/images/фон.webp");
+            background-image: url("${pageContext.request.contextPath}/images/ded.png");
             background-size: cover;
             background-position: center;
             color: white;
@@ -20,48 +20,42 @@
             margin: 0;
             text-align: center;
         }
-
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона для читаемости */
+            background-color: rgba(0, 0, 0, 0.5);
         }
-
         .container {
             position: relative;
             z-index: 1;
             padding: 20px;
             border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для формы */
+            background-color: rgba(0, 0, 0, 0.7);
             width: 90%;
             max-width: 400px;
         }
-
         h1 {
             text-align: center;
             margin-bottom: 20px;
             font-size: 24px;
             text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для текста */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-
         .form-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
         }
-
         .form-row label {
             font-size: 16px;
             margin-right: 10px;
             flex: 1;
             text-align: left;
         }
-
         .form-row input {
             flex: 2;
             padding: 10px;
@@ -69,7 +63,6 @@
             border-radius: 5px;
             max-width: 200px;
         }
-
         button {
             background-color: #FF5733;
             color: white;
@@ -81,11 +74,9 @@
             width: 100%;
             transition: background-color 0.3s;
         }
-
         button:hover {
             background-color: #C70039;
         }
-
         a {
             display: block;
             text-align: center;
@@ -93,7 +84,6 @@
             color: #FF5733;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }

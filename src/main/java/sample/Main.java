@@ -11,12 +11,5 @@ public class Main {
         Timestamp currentTimestamp = new Timestamp(System.currentTimeMillis());
         System.out.println("Current Timestamp: " + currentTimestamp);
 
-
-
-
-
-
-
-
     }
 }

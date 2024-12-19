@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("${pageContext.request.contextPath}/images/фон.webp");
+            background-image: url("${pageContext.request.contextPath}/images/ded.png");
             background-size: cover;
             background-position: center;
             color: white;
@@ -21,6 +21,7 @@
             text-align: center;
             position: relative;
         }
+
         .overlay {
             position: absolute;
             top: 0;
@@ -29,6 +30,7 @@
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.5);
         }
+
         .container {
             position: relative;
             z-index: 1;
@@ -38,24 +40,28 @@
             width: 90%;
             max-width: 400px;
         }
+
         h1 {
             margin-bottom: 20px;
             font-size: 36px;
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
         .form-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
         }
+
         .form-row label {
             font-size: 18px;
             margin-right: 10px;
             flex: 1;
             text-align: left;
         }
+
         .form-row input {
             flex: 2;
             padding: 10px;
@@ -63,6 +69,7 @@
             border-radius: 5px;
             max-width: 200px;
         }
+
         button {
             background-color: #FF5733;
             color: white;
@@ -73,13 +80,16 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         button:hover {
             background-color: #C70039;
         }
+
         .error-message {
             color: red;
             margin-top: 10px;
         }
+
         a {
             color: #FF5733;
             text-decoration: none;
@@ -102,9 +112,9 @@
             <input type="text" name="password" id="password" required>
         </div>
         <button type="submit">Войти</button>
-        <c:if test="${param.error != null}">
-            <div class="error-message">
-                <span>Номер или пароль неверны</span>
+        <c:if test="${not empty param.error}">
+            <div style="color: red;">
+                <span>${param.error}</span>
             </div>
         </c:if>
     </form>

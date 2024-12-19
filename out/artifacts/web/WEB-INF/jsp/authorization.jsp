@@ -8,10 +8,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("${pageContext.request.contextPath}/images/фон.webp");
+            background-image: url("${pageContext.request.contextPath}/images/ded.png");
             background-size: cover;
             background-position: center;
-            color: white; /* Цвет текста */
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;

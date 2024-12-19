@@ -15,7 +15,7 @@ import java.util.Optional;
 public class DateLocalFormat {
 
     private static final int MINIMUM_AGE = 18;
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd"); // Adjust the pattern as needed
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static LocalDate format(String dateString) {
         try {

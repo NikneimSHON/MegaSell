@@ -6,8 +6,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import sample.util.JspHelper;
+import sample.util.UrlPath;
 
 import java.io.IOException;
+
+import static sample.util.UrlPath.AUTHORIZATION;
 
 @WebServlet("/authorization")
 public class AuthorizationServlet extends HttpServlet {

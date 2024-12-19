@@ -10,8 +10,8 @@ import lombok.*;
 public class AddressBaseInfoDto {
     private Integer id;
     private String street;
-    private Integer idEmploy;
     private String city;
-    private Integer houseNumber;
-    private Integer apartmentHumber;
+    private String idEmploy;
+    private String houseNumber;
+    private String apartmentNumber;
 }
